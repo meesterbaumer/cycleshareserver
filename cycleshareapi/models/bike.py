@@ -1,5 +1,5 @@
 from django.db import models
-from . import Rider, Bikesize, Biketype
+from . import Bikesize, Biketype
 
 class Bike(models.Model):
 	year = models.IntegerField()
