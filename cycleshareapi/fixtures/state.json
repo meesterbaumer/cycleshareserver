@@ -1,0 +1,352 @@
+[
+  {
+      "model": "cycleshareapi.state",
+      "pk": 1,
+      "fields": {
+          "name": "Alabama"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 2,
+      "fields": {
+          "name": "Alaska"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 3,
+      "fields": {
+          "name": "Arizona"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 4,
+      "fields": {
+          "name": "Arkansas"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 5,
+      "fields": {
+          "name": "California"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 6,
+      "fields": {
+          "name": "Colorado"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 7,
+      "fields": {
+          "name": "Connecticut"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 8,
+      "fields": {
+          "name": "Delaware"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 9,
+      "fields": {
+          "name": "Florida"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 10,
+      "fields": {
+          "name": "Georgia"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 11,
+      "fields": {
+          "name": "Hawaii"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 12,
+      "fields": {
+          "name": "Idaho"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 13,
+      "fields": {
+          "name": "Illinois"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 14,
+      "fields": {
+          "name": "Indiana"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 15,
+      "fields": {
+          "name": "Iowa"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 16,
+      "fields": {
+          "name": "Kansas"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 17,
+      "fields": {
+          "name": "Kentucky"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 18,
+      "fields": {
+          "name": "Louisiana"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 19,
+      "fields": {
+          "name": "Maine"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 20,
+      "fields": {
+          "name": "Maryland"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 21,
+      "fields": {
+          "name": "Massachusetts"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 22,
+      "fields": {
+          "name": "Michigan"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 23,
+      "fields": {
+          "name": "Minnesota"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 24,
+      "fields": {
+          "name": "Mississippi"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 25,
+      "fields": {
+          "name": "Missouri"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 26,
+      "fields": {
+          "name": "Montana"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 27,
+      "fields": {
+          "name": "Nebraska"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 28,
+      "fields": {
+          "name": "Nevada"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 29,
+      "fields": {
+          "name": "New Hampshire"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 30,
+      "fields": {
+          "name": "New Jersey"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 31,
+      "fields": {
+          "name": "New Mexico"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 32,
+      "fields": {
+          "name": "New York"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 33,
+      "fields": {
+          "name": "North Carolina"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 34,
+      "fields": {
+          "name": "North Dakota"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 35,
+      "fields": {
+          "name": "Ohio"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 36,
+      "fields": {
+          "name": "Oklahoma"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 37,
+      "fields": {
+          "name": "Oregon"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 38,
+      "fields": {
+          "name": "Pennsylvania"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 39,
+      "fields": {
+          "name": "Rhode Island"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 40,
+      "fields": {
+          "name": "South Carolina"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 41,
+      "fields": {
+          "name": "South Dakota"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 42,
+      "fields": {
+          "name": "Tennessee"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 43,
+      "fields": {
+          "name": "Texas"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 44,
+      "fields": {
+          "name": "Utah"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 45,
+      "fields": {
+          "name": "Vermont"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 46,
+      "fields": {
+          "name": "Virginia"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 47,
+      "fields": {
+          "name": "Washington"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 48,
+      "fields": {
+          "name": "West Virginia"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 49,
+      "fields": {
+          "name": "Wisconsin"
+      }
+  },
+  {
+      "model": "cycleshareapi.state",
+      "pk": 50,
+      "fields": {
+          "name": "Wyoming"
+      }
+  }
+]
