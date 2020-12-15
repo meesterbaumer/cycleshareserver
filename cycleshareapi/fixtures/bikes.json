@@ -1,0 +1,41 @@
+[
+    {
+        "model": "cycleshareapi.bike",
+        "pk": 1,
+        "fields": {
+            "year": 2019,
+            "make": "Trek",
+            "model": "Madone",
+            "fee": true,
+            "biketype": 1,
+            "bikesize": 3,
+            "rider": 1
+        }
+    },
+    {
+        "model": "cycleshareapi.bike",
+        "pk": 2,
+        "fields": {
+            "year": 2020,
+            "make": "Cannondale",
+            "model": "Synapse",
+            "fee": false,
+            "biketype": 1,
+            "bikesize": 5,
+            "rider": 1
+        }
+    },
+    {
+        "model": "cycleshareapi.bike",
+        "pk": 3,
+        "fields": {
+            "year": 2018,
+            "make": "Trek",
+            "model": "8.3 DS",
+            "fee": true,
+            "biketype": 3,
+            "bikesize": 1,
+            "rider": 2
+        }
+    }
+  ]
