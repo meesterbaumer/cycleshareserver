@@ -1,0 +1,58 @@
+[
+  {
+      "model": "cycleshareapi.biketype",
+      "pk": 1,
+      "fields": {
+          "label": "Road"
+      }
+  },
+  {
+      "model": "cycleshareapi.biketype",
+      "pk": 2,
+      "fields": {
+          "label": "Mountain"
+      }
+  },
+  {
+      "model": "cycleshareapi.biketype",
+      "pk": 3,
+      "fields": {
+          "label": "Hybrid"
+      }
+  },
+  {
+      "model": "cycleshareapi.biketype",
+      "pk": 4,
+      "fields": {
+          "label": "Gravel"
+      }
+  },
+  {
+      "model": "cycleshareapi.biketype",
+      "pk": 5,
+      "fields": {
+          "label": "Cyclocross"
+      }
+  },
+  {
+      "model": "cycleshareapi.biketype",
+      "pk": 6,
+      "fields": {
+          "label": "Triathlon/TT"
+      }
+  },
+  {
+      "model": "cycleshareapi.biketype",
+      "pk": 7,
+      "fields": {
+          "label": "Tandem"
+      }
+  },
+  {
+      "model": "cycleshareapi.biketype",
+      "pk": 8,
+      "fields": {
+          "label": "One of a kind"
+      }
+  }
+]

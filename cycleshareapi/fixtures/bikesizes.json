@@ -1,0 +1,58 @@
+[
+  {
+      "model": "cycleshareapi.bikesize",
+      "pk": 1,
+      "fields": {
+          "label": "48cm"
+      }
+  },
+  {
+      "model": "cycleshareapi.bikesize",
+      "pk": 2,
+      "fields": {
+          "label": "50cm"
+      }
+  },
+  {
+      "model": "cycleshareapi.bikesize",
+      "pk": 3,
+      "fields": {
+          "label": "52cm"
+      }
+  },
+  {
+      "model": "cycleshareapi.bikesize",
+      "pk": 4,
+      "fields": {
+          "label": "54cm"
+      }
+  },
+  {
+      "model": "cycleshareapi.bikesize",
+      "pk": 5,
+      "fields": {
+          "label": "56cm"
+      }
+  },
+  {
+      "model": "cycleshareapi.bikesize",
+      "pk": 6,
+      "fields": {
+          "label": "58cm"
+      }
+  },
+  {
+      "model": "cycleshareapi.bikesize",
+      "pk": 7,
+      "fields": {
+          "label": "60cm"
+      }
+  },
+  {
+      "model": "cycleshareapi.bikesize",
+      "pk": 8,
+      "fields": {
+          "label": "62cm"
+      }
+  }
+]

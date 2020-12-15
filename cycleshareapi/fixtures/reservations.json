@@ -1,0 +1,22 @@
+[
+    {
+        "model": "cycleshareapi.reservation",
+        "pk": 1,
+        "fields": {
+            "date": "2021-1-13",
+            "rider": 1,
+            "bike": 3,
+            "payment": 2
+        }
+    },
+    {
+        "model": "cycleshareapi.reservation",
+        "pk": 2,
+        "fields": {
+            "date": "2021-3-23",
+            "rider": 2,
+            "bike": 1,
+            "payment": 1
+        }
+    }
+  ]
