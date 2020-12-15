@@ -1,4 +1,3 @@
-from cycleshareapi.models.payment import Payment
 from django.db import models
 from . import Rider, Payment
 
