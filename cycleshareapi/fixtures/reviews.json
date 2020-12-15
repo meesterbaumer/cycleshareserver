@@ -1,0 +1,20 @@
+[
+    {
+        "model": "cycleshareapi.reviews",
+        "pk": 1,
+        "fields": {
+            "message": "Michael is the best user on this site.  I would def. rent from him again in the future",
+            "author": 2,
+            "user": 1
+        }
+    },
+    {
+        "model": "cycleshareapi.reviews",
+        "pk": 2,
+        "fields": {
+            "message": "Dave is a pretty awesome guy.  His bike is amazing",
+            "author": 1,
+            "user": 2
+        }
+    }
+  ]
