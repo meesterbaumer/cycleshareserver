@@ -1,4 +1,12 @@
 {
   "python.linting.pylintEnabled": true,
-  "python.pythonPath": "/Users/meesterbaumer/.local/share/virtualenvs/cycleshare-G8pYoSBd/bin/python"
+"python.pythonPath": "/Users/meesterbaumer/.local/share/virtualenvs/cycleshare-G8pYoSBd/bin/python",
+"sqltools.connections": [
+    {
+        "previewLimit": 50,
+        "driver": "SQLite",
+        "name": "db",
+        "database": "db.sqlite3"
+    }
+]
 }

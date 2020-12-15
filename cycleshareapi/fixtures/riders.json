@@ -1,0 +1,22 @@
+[
+  {
+      "model": "cycleshareapi.rider",
+      "pk": 1,
+      "fields": {
+          "user": 1,
+		  "address": "1604 Indian Creek Circle",
+		  "city": "Franklin",
+		  "state": 42
+      }
+  },
+  {
+    "model": "cycleshareapi.rider",
+    "pk": 2,
+    "fields": {
+        "user": 2,
+        "address": "515 E. Main Street",
+        "city": "Moab",
+        "state": 44
+    }
+}
+]
