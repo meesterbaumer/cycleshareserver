@@ -1,0 +1,44 @@
+[
+  {
+      "model": "cycleshareapi.payment",
+      "pk": 1,
+      "fields": {
+          "payment": "Cash"
+      }
+  },
+  {
+      "model": "cycleshareapi.payment",
+      "pk": 2,
+      "fields": {
+          "payment": "Apple Cash"
+      }
+  },
+  {
+      "model": "cycleshareapi.payment",
+      "pk": 3,
+      "fields": {
+          "payment": "Venmo"
+      }
+  },
+  {
+      "model": "cycleshareapi.payment",
+      "pk": 4,
+      "fields": {
+          "payment": "Cash App"
+      }
+  },
+  {
+      "model": "cycleshareapi.payment",
+      "pk": 5,
+      "fields": {
+          "payment": "PayPal"
+      }
+  },
+  {
+      "model": "cycleshareapi.payment",
+      "pk": 6,
+      "fields": {
+          "payment": "Zelle"
+      }
+  }
+]
