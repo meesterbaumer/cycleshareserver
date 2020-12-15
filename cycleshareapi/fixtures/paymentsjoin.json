@@ -1,0 +1,42 @@
+[
+    {
+        "model": "cycleshareapi.paymentjoin",
+        "pk": 1,
+        "fields": {
+            "payment": 1,
+            "rider": 1
+        }
+    },
+    {
+        "model": "cycleshareapi.paymentjoin",
+        "pk": 2,
+        "fields": {
+            "payment": 2,
+            "rider": 1
+        }
+    },
+    {
+        "model": "cycleshareapi.paymentjoin",
+        "pk": 3,
+        "fields": {
+            "payment": 3,
+            "rider": 1
+        }
+    },
+    {
+        "model": "cycleshareapi.paymentjoin",
+        "pk": 4,
+        "fields": {
+            "payment": 3,
+            "rider": 2
+        }
+    },
+    {
+        "model": "cycleshareapi.paymentjoin",
+        "pk": 5,
+        "fields": {
+            "payment": 4,
+            "rider": 2
+        }
+    }
+  ]
