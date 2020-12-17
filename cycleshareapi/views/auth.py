@@ -58,16 +58,8 @@ def register_user(request):
         last_name=req_body['last_name']
     )
 
-    # Now save the extra info in the cycleshareapi_rider table
-    rider = Rider.objects.create(
-        address=req_body['address'],
-        city=req_body['city'],
-        state=req_body['state'],
-        user=new_user
-    )
-
     # Commit the user to the database by saving it
-    rider.save()
+    new_user.save()
 
     # Use the REST Framework's token generator on the new user account
     token = Token.objects.create(user=new_user)
@@ -75,3 +67,4 @@ def register_user(request):
     # Return the token to the client
     data = json.dumps({"token": token.key})
     return HttpResponse(data, content_type='application/json')
+    
