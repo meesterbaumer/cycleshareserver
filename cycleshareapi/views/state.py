@@ -7,13 +7,13 @@ from cycleshareapi.models import State
 
 
 class States(ViewSet):
-    """Level up game types"""
+    """CyCleShare states"""
 
     def retrieve(self, request, pk=None):
-        """Handle GET requests for single game type
+        """Handle GET requests single state
 
         Returns:
-            Response -- JSON serialized game type
+            Response -- JSON serialized state
         """
         try:
             states = State.objects.get(pk=pk)
@@ -23,10 +23,10 @@ class States(ViewSet):
             return HttpResponseServerError(ex)
 
     def list(self, request):
-        """Handle GET requests to get all game types
+        """Handle GET requests to get all states
 
         Returns:
-            Response -- JSON serialized list of game types
+            Response -- JSON serialized list of states
         """
         states = State.objects.all()
 
