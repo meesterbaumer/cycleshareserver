@@ -3,7 +3,7 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
-from cycleshareapi.models import Payment, Paymentjoin
+from cycleshareapi.models import Payment, Paymentjoin, Rider
 from cycleshareapi.views.bike import RiderSerializer
 
 class PaymentsSerializer(serializers.ModelSerializer):
@@ -35,7 +35,8 @@ class Paymentjoins(ViewSet):
         Returns:
             Response -- JSON serialized list of states
         """
-        paymentjoins = Paymentjoin.objects.all()
+        rider = Rider.objects.get(user = request.auth.user)
+        paymentjoins = Paymentjoin.objects.filter(rider = rider)
 
         # Note the addtional `many=True` argument to the
         # serializer. It's needed when you are serializing
