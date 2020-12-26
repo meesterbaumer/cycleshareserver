@@ -188,4 +188,3 @@ class Bikes(ViewSet):
             bikes, many=True, context={'request': request})
         return Response(serializer.data)
 
-

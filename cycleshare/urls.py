@@ -8,7 +8,7 @@ router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'states', States, 'state')
 router.register(r'riders', Riders, 'rider')
 router.register(r'bikes', Bikes, 'bike')
-router.register(r'payments', Paymentjoins, 'payments')
+router.register(r'payments', Paymentjoins, 'payment')
 
 
 urlpatterns = [
