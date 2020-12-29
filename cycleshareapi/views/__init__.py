@@ -6,3 +6,4 @@ from .bike import Bikes
 from .myBikes import MyBikes
 from .paymentjoin import Paymentjoins
 from .biketypes import BikeTypes
+from .bikesizes import BikeSizes
