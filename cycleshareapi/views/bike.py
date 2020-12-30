@@ -97,8 +97,8 @@ class Bikes(ViewSet):
         bike.model = request.data["model"]
         bike.image = request.data["image"]
         bike.fee = request.data["fee"]
-        bike.type = Biketype.objects.get(pk=request.data["biketype"])
-        bike.size = Biketype.objects.get(pk=request.data["bikesize"])
+        bike.biketype = Biketype.objects.get(pk=request.data["biketype"])
+        bike.bikesize = Bikesize.objects.get(pk=request.data["bikesize"])
 
         # Try to save the new game to the database, then
         # serialize the game instance as JSON, and send the
