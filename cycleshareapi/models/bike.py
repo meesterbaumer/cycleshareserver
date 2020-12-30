@@ -1,7 +1,10 @@
+"""Model imports for Bike"""
 from django.db import models
 from . import Bikesize, Biketype, Rider
 
+
 class Bike(models.Model):
+    """Model Class definition for Bike"""
     year = models.IntegerField()
     make = models.CharField(max_length=50)
     model = models.CharField(max_length=50)
@@ -10,4 +13,3 @@ class Bike(models.Model):
     biketype = models.ForeignKey(Biketype, on_delete=models.CASCADE)
     bikesize = models.ForeignKey(Bikesize, on_delete=models.CASCADE)
     rider = models.ForeignKey(Rider, on_delete=models.CASCADE)
-    
