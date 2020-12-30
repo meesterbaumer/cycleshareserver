@@ -7,6 +7,9 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from cycleshareapi.models import Rider, State, Bike, Biketype, Bikesize
+import uuid
+import base64
+from django.core.files.base import ContentFile
 
 class BikeOwnerSerializer(serializers.ModelSerializer):
     """JSON serializer for event organizer's related Django user"""
@@ -95,10 +98,17 @@ class Bikes(ViewSet):
         bike.year = request.data["year"]
         bike.make = request.data["make"]
         bike.model = request.data["model"]
-        bike.image = request.data["image"]
         bike.fee = request.data["fee"]
         bike.biketype = Biketype.objects.get(pk=request.data["biketype"])
         bike.bikesize = Bikesize.objects.get(pk=request.data["bikesize"])
+        bike.image = request.data["image"]
+
+        if request.data["image"] is not None:
+            format, imgstr = request.data["image"].split(';base64,')
+            ext = format.split('/')[-1]
+            data = ContentFile(base64.b64decode(imgstr), name=f'"image"-{uuid.uuid4()}.{ext}')
+
+            bike.image = data
 
         # Try to save the new game to the database, then
         # serialize the game instance as JSON, and send the
