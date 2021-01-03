@@ -1,6 +1,7 @@
 """View module for handling requests for states"""
 from django.http import HttpResponseServerError
 from django.contrib.auth.models import User
+from rest_framework import status
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
@@ -85,3 +86,34 @@ class MyBikes(ViewSet):
         serializer = BikeSerializer(
             mybikes, many=True, context={'request': request})
         return Response(serializer.data)
+
+    def retrieve(self, request, pk=None):
+        """Handle GET requests for single bike
+
+        Returns:
+            Response -- JSON serialized bike instance
+        """
+        try:
+            mybike = Bike.objects.get(pk=pk)
+            serializer = BikeSerializer(mybike, context={'request': request})
+            return Response(serializer.data)
+        except Exception as ex:
+            return HttpResponseServerError(ex)
+
+    def destroy(self, request, pk=None):
+        """Handle DELETE requests for a single game
+
+        Returns:
+            Response -- 200, 404, or 500 status code
+        """
+        try:
+            bike = Bike.objects.get(pk=pk)
+            bike.delete()
+
+            return Response({}, status=status.HTTP_204_NO_CONTENT)
+
+        except Bike.DoesNotExist as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
+
+        except Exception as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
