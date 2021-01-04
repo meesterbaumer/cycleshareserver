@@ -36,7 +36,8 @@ class Paymentjoins(ViewSet):
             Response -- JSON serialized list of states
         """
         rider = Rider.objects.get(user = request.auth.user)
-        paymentjoins = Paymentjoin.objects.filter(rider = rider)
+        # paymentjoins = Paymentjoin.objects.filter(rider = rider)
+        paymentjoins = Paymentjoin.objects.all()
 
         # Note the addtional `many=True` argument to the
         # serializer. It's needed when you are serializing

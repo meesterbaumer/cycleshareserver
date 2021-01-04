@@ -107,8 +107,8 @@ class Bikes(ViewSet):
             format, imgstr = request.data["image"].split(';base64,')
             ext = format.split('/')[-1]
             data = ContentFile(base64.b64decode(imgstr), name=f'"image"-{uuid.uuid4()}.{ext}')
-
             bike.image = data
+        else: bike.image = "images/bikepics/image-2c93af49-3fe8-4ac4-9e43-8290153d65b4.jpeg"
 
         # Try to save the new game to the database, then
         # serialize the game instance as JSON, and send the
