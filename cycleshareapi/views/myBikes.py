@@ -75,8 +75,7 @@ class BikeSerializer(serializers.ModelSerializer):
 class MyBikes(ViewSet):
     """CyCleShare Payment Joins"""
 
-    def list(self, request):
-        
+    def list(self, request):       
         rider = Rider.objects.get(user = request.auth.user)
         mybikes = Bike.objects.filter(rider = rider)
 
