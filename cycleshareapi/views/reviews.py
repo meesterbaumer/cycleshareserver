@@ -187,7 +187,8 @@ class Reviews(ViewSet):
             Response -- JSON serialized list of games
         """
         # Get all game records from the database
-        reviews = Review.objects.all()
+        rider = Rider.objects.get(user = request.auth.user)
+        reviews = Review.objects.filter(user = rider)
 
         serializer = ReviewSerializer(
             reviews, many=True, context={'request': request})
