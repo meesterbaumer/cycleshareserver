@@ -1,3 +1,4 @@
+from cycleshareapi.views.reviews import Reviews
 from django.conf.urls import include
 from django.conf import settings
 from django.urls import path
@@ -15,7 +16,7 @@ router.register(r'payments', Paymentjoins, 'payment')
 router.register(r'biketypes', BikeTypes, 'biketype')
 router.register(r'bikesizes', BikeSizes, 'bikesize')
 router.register(r'reservations', MyReservations, 'reservations')
-
+router.register(r'reviews', Reviews, 'reviews')
 
 
 urlpatterns = [
