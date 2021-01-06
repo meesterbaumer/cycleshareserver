@@ -144,46 +144,57 @@ class Bikes(ViewSet):
         except Exception as ex:
             return HttpResponseServerError(ex)
 
-    # def update(self, request, pk=None):
-    #     """Handle PUT requests for a game
+    def update(self, request, pk=None):
+        """Handle PUT requests for an updated Bike
 
-    #     Returns:
-    #         Response -- Empty body with 204 status code
-    #     """
-    #     bike = Bike.objects.get(user=request.auth.user)
+        Returns:
+            Response -- Empty body with 204 status code
+        """
+        user = Rider.objects.get(pk=request.auth.user_id)
 
-    #     # Do mostly the same thing as POST, but instead of
-    #     # creating a new instance of Game, get the game record
-    #     # from the database whose primary key is `pk`
-    #     rider = Rider.objects.get(pk=pk)
-    #     rider.user = rider
-    #     rider.address = request.data["address"]
-    #     rider.city = request.data["city"]
-    #     rider.state = request.data["state"]
+        # Do mostly the same thing as POST, but instead of
+        # creating a new instance of Bike, get the bike record
+        # from the database whose primary key is `pk`
+        bike = Bike.objects.get(pk=pk)
+        bike.rider = user
+        bike.year = request.data["year"]
+        bike.make = request.data["make"]
+        bike.model = request.data["model"]
+        bike.fee = request.data["fee"]
+        bike.biketype = Biketype.objects.get(pk=request.data["biketype"])
+        bike.bikesize = Bikesize.objects.get(pk=request.data["bikesize"])
+        bike.image = request.data["image"]
 
-    #     rider.save()
+        if request.data["image"] is not None:
+            format, imgstr = request.data["image"].split(';base64,')
+            ext = format.split('/')[-1]
+            data = ContentFile(base64.b64decode(imgstr), name=f'"image"-{uuid.uuid4()}.{ext}')
+            bike.image = data
+        else: bike.image = "images/bikepics/image-2c93af49-3fe8-4ac4-9e43-8290153d65b4.jpeg"
 
-    #     # 204 status code means everything worked but the
-    #     # server is not sending back any data in the response
-    #     return Response({}, status=status.HTTP_204_NO_CONTENT)
+        bike.save()
 
-    # def destroy(self, request, pk=None):
-    #     """Handle DELETE requests for a single game
+        # 204 status code means everything worked but the
+        # server is not sending back any data in the response
+        return Response({}, status=status.HTTP_204_NO_CONTENT)
 
-    #     Returns:
-    #         Response -- 200, 404, or 500 status code
-    #     """
-    #     try:
-    #         rider = Rider.objects.get(pk=pk)
-    #         rider.delete()
+    def destroy(self, request, pk=None):
+        """Handle DELETE requests for a single game
 
-    #         return Response({}, status=status.HTTP_204_NO_CONTENT)
+        Returns:
+            Response -- 200, 404, or 500 status code
+        """
+        try:
+            rider = Rider.objects.get(pk=pk)
+            rider.delete()
 
-    #     except Rider.DoesNotExist as ex:
-    #         return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
+            return Response({}, status=status.HTTP_204_NO_CONTENT)
 
-    #     except Exception as ex:
-    #         return Response({'message': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        except Rider.DoesNotExist as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
+
+        except Exception as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def list(self, request):
         """Handle GET requests to games resource
