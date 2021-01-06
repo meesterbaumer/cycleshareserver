@@ -192,6 +192,7 @@ class Bikes(ViewSet):
             Response -- JSON serialized list of games
         """
         # Get all game records from the database
+        
         bikes = Bike.objects.all()
 
         serializer = BikeSerializer(

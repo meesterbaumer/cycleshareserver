@@ -8,3 +8,4 @@ from .paymentjoin import Paymentjoins
 from .biketypes import BikeTypes
 from .bikesizes import BikeSizes
 from .reservation import MyReservations
+from .reviews import Reviews
