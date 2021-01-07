@@ -90,7 +90,7 @@ class Bikes(ViewSet):
         # Uses the token passed in the `Authorization` header
         user = Rider.objects.get(pk=request.auth.user_id)
 
-        # Create a new Python instance of the Game class
+        # Create a new Python instance of the Bike class
         # and set its properties from what was sent in the
         # body of the request from the client.
         bike = Bike()
