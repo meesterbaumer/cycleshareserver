@@ -37,11 +37,11 @@ class Paymentjoins(ViewSet):
         """
         rider = Rider.objects.get(user = request.auth.user)
         # paymentjoins = Paymentjoin.objects.filter(rider = rider)
-        paymentjoins = Paymentjoin.objects.all()
+        paymentjoins = Payment.objects.all()
 
         # Note the addtional `many=True` argument to the
         # serializer. It's needed when you are serializing
         # a list of objects instead of a single object.
-        serializer = PaymentJoinsSerializer(
+        serializer = PaymentsSerializer(
             paymentjoins, many=True, context={'request': request})
         return Response(serializer.data)
